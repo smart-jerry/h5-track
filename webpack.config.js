@@ -1,0 +1,1 @@
+/** * Created by alan on 16/8/2. */var webpack = require('webpack');module.exports = {	entry: {		trackLog: "./src/trackLog.js",		trackError: "./src/trackError.js"	},	output: {		path: "build",		filename: '[name].js'	},	plugins: [		new webpack.optimize.UglifyJsPlugin({			compress: {				warnings: false			}		})	]};
